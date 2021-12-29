@@ -13,7 +13,7 @@ fittingLink.forEach(el => {
 
     self.classList.add('active')
 
-    if (self.classList.contains('acgit inittive')) {
+    if (self.classList.contains('active')) {
       shopLink.forEach(el => {
         el.classList.remove('active')
       });
