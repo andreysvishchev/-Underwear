@@ -1,0 +1,90 @@
+.hero {
+  margin-top: 25px;
+}
+
+.hero-slider {
+  max-height: 650px;
+  height: 100%;
+
+
+  &__item {
+    position: relative;
+    max-height: 650px;
+    height: auto;
+  }
+
+  &__content {
+    margin: 125px 0 0 105px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.01em;
+    color: #111113;
+    max-width: 400px;
+    margin-bottom: 25px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    @extend %apercu;
+    margin-bottom: 50px;
+  }
+
+  &__link {
+    max-width: 165px;
+    width: 100%;
+    padding: 18px 0;
+    text-align: center;
+    @extend %apercu;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    border: 1px solid transparent;
+    transition: all .3s ease-in;
+
+    &--shop {
+      margin-right: 10px;
+      color: #393939;
+      border: 1px solid #393939;
+    }
+
+    &--shop.active {
+      color: #fff;
+      background: #000000;
+
+    }
+
+    &--fitting {
+      color: #393939;
+      border: 1px solid #393939;
+    }
+
+    &--fitting.active {
+      color: #fff;
+      background: #000000;
+    }
+  }
+}
