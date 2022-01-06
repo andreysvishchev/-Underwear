@@ -1,6 +1,8 @@
 var swiper = new Swiper(".hero-slider", {
+  speed: 1000,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".hero-slider__buttons",
+    clickable: true,
   },
 });
 
