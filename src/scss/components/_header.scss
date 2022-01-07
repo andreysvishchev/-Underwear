@@ -128,10 +128,11 @@
 @media (max-width: 1090px) {
 
   .header {
-      &__items {
-          display: flex;
-          justify-content: center;
-      }
+    &__items {
+      display: flex;
+      justify-content: center;
+    }
+
     &__item {
       &:last-child {
         display: none;
@@ -200,7 +201,7 @@
     }
   }
 
-  .favorite {
+  .favorite-list {
     margin-right: 25px;
   }
 }
