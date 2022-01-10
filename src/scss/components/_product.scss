@@ -1,16 +1,16 @@
 .product {
-  max-width: 390px;
+  width: 390px;
+  height: 580px;
   position: relative;
+  overflow-y: hidden;
 
   &+.product {
     margin-left: 25px;
   }
 
   &__img {
-    max-width: 390px;
-    width: 100%;
-    max-height: 490px;
-    height: 100%;
+    width: 390px;
+    height: 490px;
     object-fit: cover;
     margin-bottom: 25px;
   }
@@ -82,6 +82,27 @@
         fill: #111;
         fill-opacity: .7;
       }
+    }
+  }
+}
+
+@media (max-width:850px) {
+  .product {
+    height: 390px;
+    max-width: 250px;
+
+    &__img {
+      max-height: 310px;
+    }
+
+    &__title {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &__price {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 }

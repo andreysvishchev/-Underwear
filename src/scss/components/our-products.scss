@@ -1,0 +1,38 @@
+.our-products {
+  margin-bottom: 140px;
+
+  &__title {
+    margin-bottom: 40px;
+    text-align-last: left;
+  }
+
+  &__scroll {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 1090px) {
+  .our-products {
+    &__scroll {
+      justify-content: flex-start;
+      width: 1220px;
+    }
+
+    &__inner {
+      overflow-x: scroll;
+    }
+  }
+}
+
+
+@media (max-width: 850px) {
+  .our-products {
+    margin-bottom: 60px;
+
+    &__scroll {
+      width: 800px;
+    }
+  }
+}

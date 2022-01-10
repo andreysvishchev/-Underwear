@@ -1,4 +1,6 @@
 .banner {
+  margin-bottom: 110px;
+
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -65,5 +67,65 @@
     border-bottom: 2px solid #fff;
     @extend %apercu;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1090px) {
+  .banner {
+    &__title {
+      font-size: 30px;
+      line-height: 42px;
+    }
+
+    &__link {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .banner {
+    margin-bottom: 60px;
+
+    &__title {
+      font-size: 22px;
+      line-height: 32px;
+      max-width: 255px;
+    }
+
+    &__link {
+      font-size: 12px;
+      line-height: 160%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .banner {
+    &__item {
+      height: 450px;
+
+      &:nth-child(1) {
+        width: 100%;
+      }
+
+      &:nth-child(2) {
+        width: 100%;
+      }
+
+      &:nth-child(3) {
+        .banner__info {
+          left: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .banner {
+    &__item {
+      height: 360px;
+    }
   }
 }

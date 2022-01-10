@@ -29,18 +29,38 @@
     }
   }
 
-  &__content {
+  &__scroll {
     display: flex;
-    opacity: 0;
-    height: 0;
     justify-content: center;
+  }
 
+  &__content {
+    display: none;
 
     &--active {
-      opacity: 1;
-      height: auto;
-      display: flex;
-      transition: all .5s ease-in;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .tabs {
+    &__scroll {
+      justify-content: flex-start;
+      width: 1220px;
+    }
+
+    &__content {
+      overflow-x: scroll;
+    }
+  }
+}
+
+
+@media (max-width: 850px) {
+  .tabs {
+    &__scroll {
+      width: 800px;
     }
   }
 }
